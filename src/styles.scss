@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  @apply transition-colors duration-300
+}
+
+.container {
+    max-width: 1140px;
+  }
+
+  .tag{
+    padding: 0 20px;
+    height: 30px;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 25px;
+    background-color: rebeccapurple;
+    color: white;
+  }
+
+// to centre the content
+.parent{
+  background-color: rebeccapurple;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.child{
+
+}
+
+.parent1{
+  background-color: rebeccapurple;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child1{
+  height: 300px;
+  width: 300px;
+  background-color: green;
+}
+
+.parent2{
+  background-color: rebeccapurple;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.child2{
+  height: 300px;
+  width: 300px;
+  background-color: green;
+}
+
+.parent3{
+  background-color: rebeccapurple;
+  height: 100vh;
+  width: 100vw;
+}
+
+.child3{
+  height: 300px;
+  width: 300px;
+  background-color: green;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+

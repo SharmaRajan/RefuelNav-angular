@@ -1,0 +1,50 @@
+
+<div class="container">
+<form #registerForm="ngForm" (ngSubmit)="register()" autocomplete="off">
+  <h2 class="text-center text-primary">Sign Up</h2>
+  <hr>
+  <div class="mb-3 form-floating">
+    <input type="text" class="form-control" name="username" [(ngModel)]="model.username" placeholder="Username" autocomplete="off">
+    <label>Username</label>
+  </div>
+
+<!--  <div class="mb-3">-->
+<!--    <label>Who is your favourite user?</label>-->
+<!--    <select class="form-select">-->
+<!--&lt;!&ndash;      1st approach&ndash;&gt;-->
+<!--&lt;!&ndash;      @for (user of usersFromHomeComponent; track usersFromHomeComponent.id) {&ndash;&gt;-->
+<!--      2nd approach i.e., for Signal-->
+<!--      @for (user of usersFromHomeComponent(); track $index) {-->
+<!--        <option [value]="user.username">{{user.username}}</option>-->
+<!--      }-->
+<!--    </select>-->
+<!--  </div>-->
+
+  <div class="mb-3 form-floating">
+    <input type="text " class="form-control" name="name" [(ngModel)]="model.name" placeholder="Name" autocomplete="off">
+    <label>Name</label>
+  </div>
+
+  <div class="mb-3 form-floating">
+    <input type="text " class="form-control" name="email" [(ngModel)]="model.email" placeholder="Email" autocomplete="off">
+    <label>Email</label>
+  </div>
+
+  <div class="mb-3 form-floating">
+    <input type="password " class="form-control" name="password" [(ngModel)]="model.password" placeholder="Password" autocomplete="off">
+    <label>Password</label>
+  </div>
+
+  <div class="mb-3 form-floating has-danger">
+    <input type="text" class="form-control is-invalid" placeholder="Confirm Password" autocomplete="off">
+    <label>Confirm Password</label>
+<!--    <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>-->
+  </div>
+
+  <div class="form-group text-center">
+    <button class="btn btn-primary me-2" type="submit">Register</button>
+    <button class="btn btn-default me-2" (click)="cancel()" type="button">Cancel</button>
+  </div>
+</form>
+</div>
+
