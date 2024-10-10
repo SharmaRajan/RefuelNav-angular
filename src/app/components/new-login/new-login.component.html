@@ -14,7 +14,7 @@
 -->
 @if (!registerMode) {
 <!--  <div class="container mt-5">-->
-  <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+  <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 h-screen">
     <form #loginForm="ngForm" (ngSubmit)="login()"  autocomplete="off">
       <div class="space-y-12">
         <div class="border-b-0 border-gray-900/10 pb-12">
@@ -48,13 +48,8 @@
                 </div>
               </div>
             </div>
-
           </div>
-
-
-
         </div>
-
       </div>
 
       <div class="mt-1 flex items-center justify-center gap-x-4">
